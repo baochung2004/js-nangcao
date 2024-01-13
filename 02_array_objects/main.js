@@ -2,37 +2,17 @@
 let x;
 const arr = [28, 38, 45, 65, 10];
 // arr.push(100); // Thêm 1 phần hay nhiều phần tử vào bên trong mảng
-arr.pop();
-// unshift() - Add a value to the beginning of the array
-arr.unshift(99);
-
-// shift() - Remove first value
-arr.shift();
-
-// reverse() - Reverse an array
-arr.reverse();
-console.log(arr);
-
-// includes() - Check to see if something is in the array
-x = arr.includes(445);
-
-// indexOf() - Return the index of the first match
-x = arr.indexOf(28);
-
-// Return array as a string
-x = arr.toString();
-x = arr.join();
-
-// slice() returns selected elements in an array, as a new array. Slice takes in the index of the first element and the index of the last element to be included in the new array.
-x = arr.slice(1, 4);
-
-// splice() works like slice() except it takes the index of the first element and the number of elements after that as a second argument. it also mutates the original array where slice() does not
-x = arr.splice(1, 4);
-
-// Remove a single element/value - The following will mutate the original array by taking out the element with the index of 4. x will be equal to a new array with that plucked out value.
-x = arr.splice(4, 1);
-
-// Chaining methods - Some methods can be chained depending on the return value.
-x = arr.slice(1, 4).reverse().toString().charAt(0);
+// arr.pop(); //Loại bỏ phần tử cuối cùng trong mảng
+// arr.unshift(99);// Thêm phần tử có giá trị là 99 và mảng
+// arr.shift();// Loại bỏ phần tử đầu tiên trong mảng
+// arr.reverse();//Đảo ngược thứ tự của các phân tử trong mảng
+// x = arr.includes(445);//Kiểm tra xem giá trị 445 có tồn tại trong mảng hay không
+// x = arr.indexOf(28);// trả về chỉ số(index)của giá trị đầu tiên là 28 trong mảng
+// x = arr.toString();// Chuyển đổi một mảng thành 1 chuỗi
+// x = arr.join(); //chuyển đổi mảng thành 1 chuổi và cách nhau bằng dấu phẩy
+// x = arr.slice(1, 4); // trả về phẩn tử 1-->3
+// x = arr.splice(1, 4); //trả về giá trị từ 1-->4
+// x = arr.splice(4, 1); // trả về giá trị của phần tử 4
+// x = arr.slice(1, 4).reverse().toString().charAt(0);
 
 console.log(x);
